@@ -1,0 +1,19 @@
+<div class="row row-cols-1 row-cols-md-4 m-4">
+
+    <div class="col mb-4" *ngFor="let team of teams">
+
+      <div class="card h-100">
+
+        <img [src]="team.crestUrl" class="card-img-top" alt="Card image cap"> 
+
+        <div class="card-body">
+            <h3 class="card-title">{{team.area.name}}</h3>
+            <p class="card-text">{{team.id}} - {{team.name}}</p>
+            <p class="card-text">{{team.address}}</p>
+        </div>
+        
+      </div>
+
+    </div>
+
+</div>

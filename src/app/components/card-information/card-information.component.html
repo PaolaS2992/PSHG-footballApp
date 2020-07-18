@@ -1,0 +1,33 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="allTeam.crestUrl" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{allTeam.shortName}}</h5>
+      <p class="card-text">Ficha de Datos</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <span class="p-label">Code:</span> {{allTeam.id}}</li>
+      <li class="list-group-item">
+        <span class="p-label">Name Oficial:</span> {{allTeam.name}}</li>
+      <li class="list-group-item">
+        <span class="p-label">Area:</span> {{allTeam.area.id}} - {{allTeam.area.name}} </li>
+      <li class="list-group-item">
+        <span class="p-label">Address:</span> {{allTeam.address}}</li>
+      <li class="list-group-item">
+        <span class="p-label">Phone:</span> {{allTeam.phone}}</li>
+      <li class="list-group-item">
+        <span class="p-label">Email:</span> {{allTeam.email}}</li>
+      <li class="list-group-item">
+        <span class="p-label">Founded:</span> {{allTeam.founded}}</li>
+      <li class="list-group-item">
+        <span class="p-label">Colors:</span> {{allTeam.clubColors}}</li>
+      <li class="list-group-item">
+        <span class="p-label">TLA:</span> {{allTeam.tla}}</li>
+      <!-- <li class="list-group-item">
+        <span class="p-label">Venue:</span> {{allTeam.venue}}</li> -->
+      <li class="list-group-item">
+        <span class="p-label">Website:</span>
+        <a [href]="allTeam.website" class="card-link" target="_blank"> {{allTeam.website}}</a>
+      </li>
+    </ul>
+</div>
