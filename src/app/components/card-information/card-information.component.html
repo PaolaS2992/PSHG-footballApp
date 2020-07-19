@@ -1,8 +1,8 @@
-<div class="card" style="width: 18rem;">
+<div class="d-flex justify-content-center">
+<div class="card" style="width: 28rem;">
     <img class="card-img-top" [src]="allTeam.crestUrl" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{allTeam.shortName}}</h5>
-      <p class="card-text">Ficha de Datos</p>
+      <h4 class="card-title p-title">{{allTeam.shortName}}</h4>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
@@ -23,11 +23,12 @@
         <span class="p-label">Colors:</span> {{allTeam.clubColors}}</li>
       <li class="list-group-item">
         <span class="p-label">TLA:</span> {{allTeam.tla}}</li>
-      <!-- <li class="list-group-item">
-        <span class="p-label">Venue:</span> {{allTeam.venue}}</li> -->
+      <li class="list-group-item">
+        <span class="p-label">Venue:</span> {{allTeam.venue}}</li>
       <li class="list-group-item">
         <span class="p-label">Website:</span>
         <a [href]="allTeam.website" class="card-link" target="_blank"> {{allTeam.website}}</a>
       </li>
     </ul>
+</div>
 </div>
