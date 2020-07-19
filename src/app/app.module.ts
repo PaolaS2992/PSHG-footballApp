@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { InterceptorsService } from './interceptors/interceptors.service';
 import { CardInformationComponent } from './components/card-information/card-information.component';
+import { CardModalComponent } from './components/card-modal/card-modal.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardInformationComponent } from './components/card-information/card-inf
     SearchComponent,
     NavbarComponent,
     CardComponent,
-    CardInformationComponent
+    CardInformationComponent,
+    CardModalComponent
   ],
   imports: [
     BrowserModule,

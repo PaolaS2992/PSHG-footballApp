@@ -1,6 +1,6 @@
 <div class="row row-cols-1 row-cols-md-4 m-4">
 
-    <div class="col mb-4" *ngFor="let team of teams">
+    <div class="col mb-4 p-card" *ngFor="let team of teams" (click)="getIdTeam(team.id)"  data-toggle="modal" data-target="#exampleModal">
 
       <div class="card h-100">
 
@@ -8,7 +8,7 @@
 
         <div class="card-body">
             <h3 class="card-title">{{team.area.name}}</h3>
-            <p class="card-text">{{team.id}} - {{team.name}}</p>
+            <p class="badge badge-warning">{{team.id}} - {{team.name}}</p>
             <p class="card-text">{{team.address}}</p>
         </div>
         
@@ -17,3 +17,5 @@
     </div>
 
 </div>
+
+<app-card-modal [teamModal]="infoTeam"></app-card-modal>

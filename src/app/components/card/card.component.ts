@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FootballService } from 'src/app/services/football.service';
 
 @Component({
   selector: 'app-card',
@@ -8,10 +9,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
 
   @Input() teams:any[]= [];
+  infoTeam: any = {};
 
-  constructor() { }
+  constructor(private footballService: FootballService) { }
 
   ngOnInit(): void {
   }
 
+  getIdTeam(id: number){
+    console.log(id);
+    this.footballService.getTeamId(id).subscribe((data) => {
+      this.infoTeam = data;
+    })
+  }
 }
