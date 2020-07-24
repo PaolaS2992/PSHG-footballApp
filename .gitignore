@@ -12,6 +12,7 @@
 package-lock.json
 .firebaserc
 firebase.json
+.firebase
 
 # profiling files
 chrome-profiler-events*.json
